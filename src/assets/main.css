@@ -1,0 +1,45 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap');
+
+/* tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-styles */
+.font-h1-lg {
+  @apply font-['Livvic'] text-[6.25rem] font-bold leading-[6.25rem] tracking-normal;
+}
+
+.font-h1-sm {
+  @apply font-['Livvic'] text-[4rem] font-bold leading-[3.5rem] tracking-normal;
+}
+
+.font-h2 {
+  @apply font-['Livvic'] text-[3rem] font-bold leading-[3rem] tracking-normal;
+}
+
+.font-h3 {
+  @apply font-['Livvic'] text-[1.125rem] font-bold leading-[1.75rem] tracking-normal;
+}
+
+.font-body-1 {
+  @apply font-['Livvic'] text-[1.125rem] font-semibold leading-[1.75rem] tracking-normal;
+}
+
+.font-body-2 {
+  @apply font-['Livvic'] text-[0.938rem] font-semibold leading-[1.563rem] tracking-normal;
+}
+
+/* buttons */
+.btn-primary-light {
+  @apply font-body-1 cursor-pointer rounded-3xl border-2 border-white bg-transparent px-[1.938rem] py-2 text-white transition-colors hover:bg-white hover:text-dark-green disabled:pointer-events-none disabled:text-white/25 disabled:ring-white/25;
+}
+
+.btn-primary-dark {
+  @apply font-body-1 cursor-pointer rounded-3xl border-2 border-sacramento-state-green bg-transparent px-[1.938rem] py-2 text-sacramento-state-green transition-colors hover:bg-sacramento-state-green hover:text-white disabled:pointer-events-none disabled:text-sacramento-state-green/25 disabled:ring-sacramento-state-green/25;
+}
+
+.btn-secondary-light {
+  @apply font-body-1 cursor-pointer rounded-3xl border-2 border-white bg-white px-[1.938rem] py-2 text-dark-green transition-colors hover:border-rapture-blue hover:bg-rapture-blue disabled:pointer-events-none disabled:border-dark-green/25 disabled:bg-dark-green/25;
+}
