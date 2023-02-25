@@ -1,7 +1,21 @@
-<script setup></script>
+<script setup>
+import Header from './components/AppHeader.vue';
+import Footer from './components/AppFooter.vue';
+import HomeHero from './components/HomeHero.vue';
+import HomeBuildAndManage from './components/HomeBuildAndManage.vue';
+import HomeTestimonials from './components/HomeTestimonials.vue';
+import CallToAction from './components/CallToAction.vue';
+</script>
 
 <template>
-  <h1>myteam</h1>
+  <Header />
+  <main class="flex w-full flex-col items-center">
+    <HomeHero />
+    <HomeBuildAndManage />
+    <HomeTestimonials />
+  </main>
+  <CallToAction />
+  <Footer />
 </template>
 
 <script>
