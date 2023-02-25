@@ -9,7 +9,7 @@ import BgPatternHome2 from './icons/BgPatternHome2.vue';
     <div class="pointer-events-none absolute bottom-0 z-0">
       <BgPatternHome2 />
     </div>
-    <h1 class="font-h1 z-10 text-[2.5rem] font-bold leading-[2.5rem]">
+    <h1 class="z-10 text-[2.5rem] font-bold leading-[2.5rem]">
       Find the<br />best <span class="text-light-coral">talent</span>
     </h1>
     <p class="font-body-2 z-10">

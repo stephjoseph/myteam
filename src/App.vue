@@ -1,12 +1,14 @@
 <script setup>
 import Header from './components/AppHeader.vue';
 import HomeHero from './components/HomeHero.vue';
+import HomeBuildAndManage from './components/HomeBuildAndManage.vue';
 </script>
 
 <template>
   <Header />
   <main class="flex w-full flex-col items-center">
     <HomeHero />
+    <HomeBuildAndManage />
   </main>
 </template>
 
