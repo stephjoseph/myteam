@@ -2,6 +2,7 @@
 import Header from './components/AppHeader.vue';
 import HomeHero from './components/HomeHero.vue';
 import HomeBuildAndManage from './components/HomeBuildAndManage.vue';
+import HomeTestimonials from './components/HomeTestimonials.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import HomeBuildAndManage from './components/HomeBuildAndManage.vue';
   <main class="flex w-full flex-col items-center">
     <HomeHero />
     <HomeBuildAndManage />
+    <HomeTestimonials />
   </main>
 </template>
 

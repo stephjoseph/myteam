@@ -1,5 +1,5 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,500;0,600;0,700;1,500&display=swap');
 
 /* tailwind directives */
 @tailwind base;
@@ -29,6 +29,10 @@
 
 .font-body-2 {
   @apply font-['Livvic'] text-[0.938rem] font-semibold leading-[1.563rem] tracking-normal;
+}
+
+.font-body-3 {
+  @apply font-['Livvic'] text-[0.813rem] font-medium  italic leading-[1.125rem] tracking-normal;
 }
 
 /* buttons */
