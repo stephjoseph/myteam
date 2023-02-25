@@ -3,6 +3,7 @@ import Header from './components/AppHeader.vue';
 import HomeHero from './components/HomeHero.vue';
 import HomeBuildAndManage from './components/HomeBuildAndManage.vue';
 import HomeTestimonials from './components/HomeTestimonials.vue';
+import CallToAction from './components/CallToAction.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import HomeTestimonials from './components/HomeTestimonials.vue';
     <HomeBuildAndManage />
     <HomeTestimonials />
   </main>
+  <CallToAction />
 </template>
 
 <script>
