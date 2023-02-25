@@ -1,7 +1,13 @@
-<script setup></script>
+<script setup>
+import Header from './components/AppHeader.vue';
+import HomeHero from './components/HomeHero.vue';
+</script>
 
 <template>
-  <h1>myteam</h1>
+  <Header />
+  <main class="flex w-full flex-col items-center">
+    <HomeHero />
+  </main>
 </template>
 
 <script>
