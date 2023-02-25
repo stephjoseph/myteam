@@ -1,5 +1,6 @@
 <script setup>
 import Header from './components/AppHeader.vue';
+import Footer from './components/AppFooter.vue';
 import HomeHero from './components/HomeHero.vue';
 import HomeBuildAndManage from './components/HomeBuildAndManage.vue';
 import HomeTestimonials from './components/HomeTestimonials.vue';
@@ -14,6 +15,7 @@ import CallToAction from './components/CallToAction.vue';
     <HomeTestimonials />
   </main>
   <CallToAction />
+  <Footer />
 </template>
 
 <script>
