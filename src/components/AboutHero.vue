@@ -4,7 +4,7 @@ import BgPatternAbout1MobileNav1 from './icons/BgPatternAbout1MobileNav1.vue';
 
 <template>
   <section class="relative flex w-full flex-col items-center overflow-hidden pb-[6.75rem]">
-    <div class="absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2">
+    <div class="pointer-events-none absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2">
       <BgPatternAbout1MobileNav1 />
     </div>
     <div class="z-10 flex w-[87.2%] flex-col items-center gap-4">

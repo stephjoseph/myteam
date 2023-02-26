@@ -17,10 +17,10 @@ import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
   <section
     class="relative flex w-full flex-col items-center overflow-hidden bg-deep-jungle-green pt-[5.5rem] pb-[7.25rem]"
   >
-    <div class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2">
+    <div class="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2">
       <BgPatternAbout6 />
     </div>
-    <div class="absolute bottom-0 right-0">
+    <div class="pointer-events-none absolute bottom-0 right-0">
       <BgPatternHome4About3 />
     </div>
     <div class="z-10 flex w-[87.2%] flex-col items-center gap-12">

@@ -11,7 +11,7 @@ import BgPatternAbout4 from './icons/BgPatternAbout4.vue';
   <section
     class="relative flex w-full flex-col items-center overflow-hidden overflow-hidden bg-sacramento-state-green py-[5.5rem]"
   >
-    <div class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2">
+    <div class="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2">
       <BgPatternAbout4 />
     </div>
     <div class="z-10 flex w-[87.2%] flex-col items-center gap-16">
