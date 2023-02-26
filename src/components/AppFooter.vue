@@ -15,10 +15,10 @@ import IconPinterest from './icons/IconPinterest.vue';
         <nav class="flex w-full flex-col items-center">
           <ul class="flex items-center gap-6">
             <li>
-              <a class="font-body-2 text-white" href="/">home</a>
+              <router-link class="font-body-2 text-white" to="/">home</router-link>
             </li>
             <li>
-              <a class="font-body-2 text-white" href="/">about</a>
+              <router-link class="font-body-2 text-white" to="/about">about</router-link>
             </li>
           </ul>
         </nav>

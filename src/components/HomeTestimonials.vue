@@ -1,4 +1,5 @@
 <script setup>
+import { uuid } from 'vue-uuid';
 import IconQuotes from './icons/IconQuotes.vue';
 import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
 import BgPatternHome5 from './icons/BgPatternHome5.vue';
@@ -26,7 +27,7 @@ import AvatarArthur from '../assets/images/avatar-arthur.jpg';
         <div
           class="relative flex flex-col items-center gap-4 text-center"
           v-for="testimonial in testimonials"
-          :key="testimonial"
+          :key="testimonial.id"
         >
           <div class="pointer-events-none absolute -top-9">
             <IconQuotes />
@@ -61,21 +62,24 @@ export default {
           jobTitle: 'Product Manager at Bookmark',
           testimonial:
             '“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”',
-          img: AvatarKady
+          img: AvatarKady,
+          id: uuid.v4()
         },
         {
           name: 'Aiysha Reese',
           jobTitle: 'Founder of Manage',
           testimonial:
             '“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”',
-          img: AvatarAiysha
+          img: AvatarAiysha,
+          id: uuid.v4()
         },
         {
           name: 'Arthur Clarke',
           jobTitle: 'Co-founder of MyPhysio',
           testimonial:
             '“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”',
-          img: AvatarArthur
+          img: AvatarArthur,
+          id: uuid.v4()
         }
       ]
     };
