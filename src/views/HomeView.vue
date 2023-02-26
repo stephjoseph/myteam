@@ -11,9 +11,3 @@ import CallToAction from '../components/CallToAction.vue';
   <HomeTestimonials />
   <CallToAction />
 </template>
-
-<script>
-export default {};
-</script>
-
-<style lang="scss" scoped></style>

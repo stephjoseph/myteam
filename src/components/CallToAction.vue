@@ -6,7 +6,7 @@ import BgPatternHome6About5 from './icons/BgPatternHome6About5.vue';
   <section
     class="relative flex w-full flex-col items-center overflow-y-hidden bg-light-coral py-[5.188rem]"
   >
-    <div class="pointer-events-none absolute bottom-0 left-0">
+    <div class="pointer-events-none absolute bottom-0 left-0 translate-y-[22px]">
       <BgPatternHome6About5 />
     </div>
     <div class="z-10 flex w-[87.2%] flex-col items-center gap-6">
