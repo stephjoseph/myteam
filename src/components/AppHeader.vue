@@ -7,12 +7,12 @@ import Hamburger from './icons/IconHamburger.vue';
 <template>
   <header class="mb-20 flex w-full flex-col items-center">
     <nav class="mt-12 flex w-[87.2%] items-center justify-between">
-      <a class="hidden xl:block" href="/">
+      <router-link class="hidden xl:block" to="/">
         <Logo />
-      </a>
-      <a class="xl:hidden" href="">
+      </router-link>
+      <router-link class="xl:hidden" to="/">
         <MobileLogo />
-      </a>
+      </router-link>
       <button type="button">
         <Hamburger />
       </button>
