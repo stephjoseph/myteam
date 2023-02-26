@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="144" class="translate-y-[22px]">
+  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="144">
     <g fill="none" fill-rule="evenodd">
       <path fill="#2C6269" d="M100 144H0V44h100z" />
       <path

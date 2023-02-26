@@ -10,7 +10,7 @@ import BgPatternHome3 from './icons/BgPatternHome3.vue';
   <section
     class="relative flex w-full flex-col items-center overflow-x-hidden bg-sacramento-state-green py-16"
   >
-    <div class="pointer-events-none absolute top-0 right-0">
+    <div class="pointer-events-none absolute top-0 right-0 translate-x-1/2">
       <BgPatternHome3 />
     </div>
     <div class="z-10 flex w-[87.2%] flex-col items-center gap-14">
