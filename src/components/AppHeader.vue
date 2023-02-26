@@ -19,3 +19,13 @@ import Hamburger from './icons/IconHamburger.vue';
     </nav>
   </header>
 </template>
+
+<style lang="scss" scoped>
+nav {
+  a:hover,
+  a:active,
+  a.router-link-active {
+    @apply text-light-coral;
+  }
+}
+</style>
