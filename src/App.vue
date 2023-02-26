@@ -9,7 +9,7 @@ import Footer from './components/AppFooter.vue';
     :class="[isNavOpen ? 'opacity-1 visible' : 'invisible opacity-0']"
     @click="toggleModal"
   ></div>
-  <div :class="[isNavOpen ? 'h-screen overflow-hidden' : 'h-auto overflow-auto']">
+  <div class="w-full" :class="[isNavOpen ? 'h-screen overflow-hidden' : 'h-auto overflow-auto']">
     <Header :isNavOpen="isNavOpen" @toggle="toggleModal" />
     <main class="flex w-full flex-col items-center">
       <router-view />
