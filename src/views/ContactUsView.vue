@@ -1,3 +1,5 @@
-<script setup></script>
+<script setup>
+import ContactUsHero from '../components/ContactUsHero.vue';
+</script>
 
-<template>Contact Us</template>
+<template><ContactUsHero /></template>
