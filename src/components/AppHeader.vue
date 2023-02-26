@@ -20,7 +20,7 @@ import BgPatternAbout1MobileNav1 from './icons/BgPatternAbout1MobileNav1.vue';
       </button>
       <aside
         class="absolute top-0 right-0 z-30 h-screen w-[68%] bg-police-blue pt-14 pl-12 pr-[1.563rem] transition-all duration-300 ease-in"
-        :class="[this.isNavOpen ? 'opacity-1 translate-x-0' : 'translate-x-full opacity-0']"
+        :class="[isNavOpen ? 'opacity-1 translate-x-0' : 'translate-x-full opacity-0']"
       >
         <div class="pointer-events-none absolute bottom-0 right-0 translate-x-1/2">
           <BgPatternAbout1MobileNav1 />
@@ -55,11 +55,6 @@ import BgPatternAbout1MobileNav1 from './icons/BgPatternAbout1MobileNav1.vue';
 <script>
 export default {
   props: ['isNavOpen'],
-  data() {
-    return {
-      isOpen: this.isNavOpen
-    };
-  },
   methods: {
     toggleModal() {
       this.$emit('toggle');
