@@ -15,7 +15,7 @@ import BgPatternHome6About5 from './icons/BgPatternHome6About5.vue';
       >
         Ready to get started?
       </h2>
-      <a class="btn-primary-dark" href="/contact-us"> contact us </a>
+      <router-link class="btn-primary-dark" to="/contact-us">contact us</router-link>
     </div>
   </section>
 </template>

@@ -1,4 +1,5 @@
 <script setup>
+import { uuid } from 'vue-uuid';
 import TheVerge from '../assets/images/logo-the-verge.png';
 import TheJakartaPost from '../assets/images/logo-jakarta-post.png';
 import TheGuardian from '../assets/images/logo-the-guardian.png';
@@ -9,7 +10,7 @@ import BgPatternAbout4 from './icons/BgPatternAbout4.vue';
 
 <template>
   <section
-    class="relative flex w-full flex-col items-center overflow-hidden overflow-hidden bg-sacramento-state-green py-[5.5rem]"
+    class="relative flex w-full flex-col items-center overflow-hidden bg-sacramento-state-green py-[5.5rem]"
   >
     <div class="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2">
       <BgPatternAbout4 />
@@ -34,7 +35,8 @@ export default {
       clients: [
         {
           name: 'The Verge',
-          img: TheVerge
+          img: TheVerge,
+          id: uuid.v4()
         },
         {
           name: 'The Jakarta Post',
@@ -42,15 +44,18 @@ export default {
         },
         {
           name: 'The Guardian',
-          img: TheGuardian
+          img: TheGuardian,
+          id: uuid.v4()
         },
         {
           name: 'Tech Radar',
-          img: TechRadar
+          img: TechRadar,
+          id: uuid.v4()
         },
         {
           name: 'Gadgets Now',
-          img: GadgetsNow
+          img: GadgetsNow,
+          id: uuid.v4()
         }
       ]
     };
