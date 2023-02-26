@@ -1,4 +1,5 @@
 <script setup>
+import { uuid } from 'vue-uuid';
 import IconPerson from '../assets/images/icon-person.svg';
 import IconCog from '../assets/images/icon-cog.svg';
 import IconChart from '../assets/images/icon-chart.svg';
@@ -20,7 +21,7 @@ import BgPatternHome3 from './icons/BgPatternHome3.vue';
         </h2>
       </div>
       <div class="flex w-full flex-col items-center gap-12">
-        <div class="flex flex-col items-center gap-4" v-for="feature in features" :key="feature">
+        <div class="flex flex-col items-center gap-4" v-for="feature in features" :key="feature.id">
           <div>
             <img :src="feature.img" :alt="feature.alt" />
           </div>
@@ -45,19 +46,22 @@ export default {
           title: 'Experienced Individuals',
           text: 'Our network is made up of highly experienced professionals who are passionate about what they do.',
           img: IconPerson,
-          alt: 'Person icon'
+          alt: 'Person icon',
+          id: uuid.v4()
         },
         {
           title: 'Easy to Implement',
           text: 'Our processes have been refined over years of implementation meaning our teams always deliver.',
           img: IconCog,
-          alt: 'Cog icon'
+          alt: 'Cog icon',
+          id: uuid.v4()
         },
         {
           title: 'Enhanced Productivity',
           text: 'Our customized platform with in-built analytics helps you manage your distributed teams.',
           img: IconChart,
-          alt: 'Chart icon'
+          alt: 'Chart icon',
+          id: uuid.v4()
         }
       ]
     };
