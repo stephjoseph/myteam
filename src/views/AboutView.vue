@@ -1,9 +1,7 @@
-<template>
-  <div>About</div>
-</template>
-
-<script>
-export default {};
+<script setup>
+import AboutHero from '../components/AboutHero.vue';
 </script>
 
-<style lang="scss" scoped></style>
+<template>
+  <AboutHero />
+</template>
