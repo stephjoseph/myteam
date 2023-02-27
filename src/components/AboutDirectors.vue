@@ -15,21 +15,23 @@ import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
 
 <template>
   <section
-    class="relative flex w-full flex-col items-center overflow-hidden bg-deep-jungle-green pt-[5.5rem] pb-[7.25rem]"
+    class="relative flex w-full flex-col items-center overflow-hidden bg-deep-jungle-green pt-[5.5rem] pb-[7.25rem] md:pt-[6.25rem] md:pb-32"
   >
-    <div class="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2">
+    <div
+      class="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 md:translate-y-0"
+    >
       <BgPatternAbout6 />
     </div>
     <div class="pointer-events-none absolute bottom-0 right-0">
       <BgPatternHome4About3 />
     </div>
-    <div class="z-10 flex w-[87.2%] flex-col items-center gap-12">
-      <h2
-        class="w-full text-center text-[2rem] font-bold leading-[2rem] tracking-normal text-white"
-      >
+    <div class="z-10 flex w-[87.2%] flex-col items-center gap-12 md:w-[74.60%]">
+      <h2 class="w-full text-center text-[2rem] font-bold leading-8 tracking-normal text-white">
         Meet the directors
       </h2>
-      <div class="grid w-full grid-cols-1 justify-center gap-[3.25rem]">
+      <div
+        class="grid w-full grid-cols-1 justify-center gap-[3.25rem] md:grid-cols-2 md:gap-x-[0.688rem] md:gap-y-[4.75rem]"
+      >
         <div
           class="relative w-full bg-sacramento-state-green px-6 pt-8 pb-14"
           v-for="director in directors"

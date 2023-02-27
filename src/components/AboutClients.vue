@@ -10,16 +10,20 @@ import BgPatternAbout4 from './icons/BgPatternAbout4.vue';
 
 <template>
   <section
-    class="relative flex w-full flex-col items-center overflow-hidden bg-sacramento-state-green py-[5.5rem]"
+    class="relative flex w-full flex-col items-center overflow-hidden bg-sacramento-state-green py-[5.5rem] md:py-[6.25rem]"
   >
-    <div class="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2">
+    <div
+      class="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 md:translate-x-0"
+    >
       <BgPatternAbout4 />
     </div>
-    <div class="z-10 flex w-[87.2%] flex-col items-center gap-16">
+    <div class="z-10 flex w-[87.2%] flex-col items-center gap-16 md:w-[89.71%] md:gap-12">
       <h2 class="text-[2rem] font-bold leading-[2rem] tracking-normal text-white">
         Some of our clients
       </h2>
-      <div class="flex w-[49.54%] flex-col items-center gap-14">
+      <div
+        class="flex w-[49.54%] flex-col items-center gap-14 md:w-[43.063rem] md:flex-row md:justify-between md:gap-0"
+      >
         <div class="client" v-for="client in clients" :key="client.id">
           <img :src="client.img" :alt="client.name" />
         </div>
@@ -67,31 +71,31 @@ export default {
 .client {
   &:first-of-type {
     img {
-      @apply w-[9.188rem];
+      @apply w-[9.188rem] md:w-[6.438rem];
     }
   }
 
   &:nth-of-type(2) {
     img {
-      @apply w-[10.125rem];
+      @apply w-[10.125rem] md:w-[7.125rem];
     }
   }
 
   &:nth-of-type(3) {
     img {
-      @apply w-[10rem];
+      @apply w-[10rem] md:w-[7rem];
     }
   }
 
   &:nth-of-type(4) {
     img {
-      @apply w-[9.188rem];
+      @apply w-[9.188rem] md:w-[6.438rem];
     }
   }
 
   &:last-of-type {
     img {
-      @apply w-[5.438rem];
+      @apply w-[5.438rem] md:w-[3.813rem];
     }
   }
 }
