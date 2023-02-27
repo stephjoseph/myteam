@@ -3,11 +3,16 @@ import BgPatternContact2 from './icons/BgPatternContact2.vue';
 </script>
 
 <template>
-  <section class="relative flex w-full flex-col items-center overflow-hidden pb-[5.5rem]">
-    <div class="pointer-events-none absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2">
+  <section
+    class="relative flex w-full flex-col items-center overflow-hidden pb-[5.5rem] md:pb-[7rem]"
+  >
+    <div
+      class="pointer-events-none absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 md:translate-y-0"
+    >
       <BgPatternContact2 />
     </div>
-    <div class="z-10 flex w-[87.2%] flex-col items-center">
+
+    <div class="z-10 flex w-[87.2%] flex-col items-center md:w-[70.57%]">
       <form class="flex w-full flex-col items-start gap-6">
         <div class="relative w-full">
           <label class="pointer-events-none invisible absolute" for="name">Name</label>
