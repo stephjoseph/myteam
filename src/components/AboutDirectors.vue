@@ -56,7 +56,9 @@ import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
           >
             <div class="flex flex-col items-center gap-2">
               <h3 class="font-h3 text-center text-rapture-blue">{{ director.name }}</h3>
-              <p class="font-body-2 w-[83.87%] text-center text-white">{{ director.message }}</p>
+              <p class="font-body-2 w-[83.87%] text-center text-white md:w-full">
+                {{ director.message }}
+              </p>
             </div>
             <ul class="flex items-center gap-4">
               <li v-if="director.twitter">
