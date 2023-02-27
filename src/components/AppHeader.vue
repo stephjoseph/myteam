@@ -7,19 +7,24 @@ import BgPatternAbout1MobileNav1 from './icons/BgPatternAbout1MobileNav1.vue';
 </script>
 
 <template>
-  <header class="mb-20 flex w-full flex-col items-center overflow-x-hidden">
-    <nav class="mt-12 flex w-[87.2%] items-center justify-between">
+  <header class="mb-8 flex w-full flex-col items-center overflow-x-hidden md:mb-12">
+    <nav
+      class="flex w-[87.2%] items-center justify-between py-12 md:w-[89.71%] md:justify-start md:gap-12 md:py-16"
+    >
+      <!-- Logos -->
       <router-link class="hidden xl:block" to="/">
         <Logo />
       </router-link>
       <router-link class="xl:hidden" to="/">
         <MobileLogo />
       </router-link>
-      <button type="button" @click="toggleModal">
+
+      <!-- Mobile Nav -->
+      <button class="md:hidden" type="button" @click="toggleModal">
         <Hamburger />
       </button>
       <aside
-        class="absolute top-0 right-0 z-30 h-screen w-[68%] bg-police-blue pt-14 pl-12 pr-[1.563rem] transition-all duration-300 ease-in"
+        class="absolute top-0 right-0 z-30 h-screen w-[68%] bg-police-blue pt-14 pl-12 pr-[1.563rem] transition-all duration-300 ease-in md:hidden"
         :class="[isNavOpen ? 'opacity-1 translate-x-0' : 'translate-x-full opacity-0']"
       >
         <div class="pointer-events-none absolute bottom-0 right-0 translate-x-1/2">
@@ -33,12 +38,18 @@ import BgPatternAbout1MobileNav1 from './icons/BgPatternAbout1MobileNav1.vue';
           </div>
           <ul class="mb-9 flex w-full flex-col items-start gap-6">
             <li>
-              <router-link @click="toggleModal" class="font-body-1 text-white" to="/"
+              <router-link
+                @click="toggleModal"
+                class="font-body-1 text-white hover:text-light-coral active:text-light-coral"
+                to="/"
                 >home</router-link
               >
             </li>
             <li>
-              <router-link @click="toggleModal" class="font-body-1 text-white" to="/about"
+              <router-link
+                @click="toggleModal"
+                class="font-body-1 text-white hover:text-light-coral active:text-light-coral"
+                to="/about"
                 >about</router-link
               >
             </li>
@@ -48,6 +59,27 @@ import BgPatternAbout1MobileNav1 from './icons/BgPatternAbout1MobileNav1.vue';
           >
         </nav>
       </aside>
+
+      <!-- Tablet and Desktop Nav -->
+      <div class="hidden flex-grow items-center justify-between md:flex">
+        <ul class="flex items-center gap-10">
+          <li>
+            <router-link class="font-body-1 hover:text-light-coral active:text-light-coral" to="/"
+              >home</router-link
+            >
+          </li>
+          <li>
+            <router-link
+              class="font-body-1 hover:text-light-coral active:text-light-coral"
+              to="/about"
+              >about</router-link
+            >
+          </li>
+        </ul>
+        <router-link class="btn-primary-light hover:text-dark-green" to="/contact-us"
+          >contact-us</router-link
+        >
+      </div>
     </nav>
   </header>
 </template>
@@ -62,12 +94,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-nav {
-  a:hover,
-  a:active {
-    @apply text-light-coral;
-  }
-}
-</style>
