@@ -8,24 +8,30 @@ import BgPatternHome3 from './icons/BgPatternHome3.vue';
 
 <template>
   <section
-    class="relative flex w-full flex-col items-center overflow-x-hidden bg-sacramento-state-green py-16"
+    class="relative flex w-full flex-col items-center overflow-x-hidden bg-sacramento-state-green py-16 md:py-[6.25rem]"
   >
     <div class="pointer-events-none absolute top-0 right-0 translate-x-1/2">
       <BgPatternHome3 />
     </div>
-    <div class="z-10 flex w-[87.2%] flex-col items-center gap-14">
+    <div class="z-10 flex w-[87.2%] flex-col items-center gap-14 md:w-[74.60%] md:gap-16">
       <div class="flex w-full flex-col gap-8">
         <div class="h-1 w-[3.125rem] bg-light-coral"></div>
-        <h2 class="w-[73.39%] text-[2rem] font-bold leading-8 tracking-normal">
+        <h2 class="w-[73.39%] text-[2rem] font-bold leading-8 tracking-normal md:w-[77.66%]">
           Build & manage distributed teams like no one else.
         </h2>
       </div>
-      <div class="flex w-full flex-col items-center gap-12">
-        <div class="flex flex-col items-center gap-4" v-for="feature in features" :key="feature.id">
-          <div>
+      <div class="flex w-full flex-col items-center gap-12 md:gap-8">
+        <div
+          class="flex flex-col items-center gap-4 md:flex-row md:items-start md:gap-6"
+          v-for="feature in features"
+          :key="feature.id"
+        >
+          <div class="flex h-[4.5rem] w-[4.5rem] justify-end">
             <img :src="feature.img" :alt="feature.alt" />
           </div>
-          <div class="flex flex-col items-center gap-2 text-center">
+          <div
+            class="flex flex-col items-center gap-2 text-center md:w-[83.42%] md:items-start md:gap-4 md:text-left"
+          >
             <h3 class="font-h3 text-light-coral">
               {{ feature.title }}
             </h3>
