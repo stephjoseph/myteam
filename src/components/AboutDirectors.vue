@@ -9,7 +9,7 @@ import AvatarAden from '../assets/images/avatar-aden.jpg';
 import IconCross from './icons/IconCross.vue';
 import IconTwitter from './icons/IconTwitter.vue';
 import IconLinkedIn from './icons/IconLinkedIn.vue';
-import BgPatternAbout6 from './icons/BgPatternAbout6.vue';
+import BgPatternAbout2Contact1 from './icons/BgPatternAbout2Contact1.vue';
 import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
 </script>
 
@@ -20,7 +20,7 @@ import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
     <div
       class="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 md:translate-y-0"
     >
-      <BgPatternAbout6 />
+      <BgPatternAbout2Contact1 />
     </div>
     <div class="pointer-events-none absolute bottom-0 right-0">
       <BgPatternHome4About3 />
@@ -56,7 +56,9 @@ import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
           >
             <div class="flex flex-col items-center gap-2">
               <h3 class="font-h3 text-center text-rapture-blue">{{ director.name }}</h3>
-              <p class="font-body-2 w-[83.87%] text-center text-white">{{ director.message }}</p>
+              <p class="font-body-2 w-[83.87%] text-center text-white md:w-full">
+                {{ director.message }}
+              </p>
             </div>
             <ul class="flex items-center gap-4">
               <li v-if="director.twitter">
