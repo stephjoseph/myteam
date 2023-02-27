@@ -5,7 +5,7 @@ import Footer from './components/AppFooter.vue';
 
 <template>
   <div
-    class="absolute z-20 h-full w-full bg-black/50 transition-opacity duration-300 ease-in"
+    class="absolute z-20 h-full w-full bg-black/50 transition-opacity duration-300 ease-in md:hidden"
     :class="[isNavOpen ? 'opacity-1 visible' : 'invisible opacity-0']"
     @click="toggleModal"
   ></div>
