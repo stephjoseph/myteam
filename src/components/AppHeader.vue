@@ -9,7 +9,7 @@ import BgPatternAbout1MobileNav1 from './icons/BgPatternAbout1MobileNav1.vue';
 <template>
   <header class="mb-8 flex w-full flex-col items-center overflow-x-hidden md:mb-12">
     <nav
-      class="flex w-[87.2%] items-center justify-between py-12 md:w-[89.71%] md:justify-start md:gap-12 md:py-16"
+      class="flex w-[87.2%] items-center justify-between py-12 md:w-[89.71%] md:justify-start md:gap-12 md:py-16 xl:w-[77.08%] xl:py-[4.5rem]"
     >
       <!-- Logos -->
       <router-link class="hidden xl:block" to="/">
