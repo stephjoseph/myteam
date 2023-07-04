@@ -4,7 +4,7 @@ import BgPatternContact2 from './icons/BgPatternContact2.vue';
 
 <template>
   <section
-    class="relative flex w-full flex-col items-center overflow-hidden pb-[5.5rem] md:pb-[7rem]"
+    class="flex w-full flex-col items-center overflow-hidden pb-[5.5rem] md:pb-[7rem] xl:w-[48.64%] xl:pb-0"
   >
     <div
       class="pointer-events-none absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 md:translate-y-0"
@@ -12,7 +12,7 @@ import BgPatternContact2 from './icons/BgPatternContact2.vue';
       <BgPatternContact2 />
     </div>
 
-    <div class="z-10 flex w-[87.2%] flex-col items-center md:w-[70.57%]">
+    <div class="z-10 flex w-[87.2%] flex-col items-center md:w-[70.57%] xl:w-full">
       <form class="flex w-full flex-col items-start gap-6">
         <div class="relative w-full">
           <label class="pointer-events-none invisible absolute" for="name">Name</label>
