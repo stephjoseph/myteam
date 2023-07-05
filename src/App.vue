@@ -11,7 +11,7 @@ import Footer from './components/AppFooter.vue';
   ></div>
   <div class="w-full" :class="[isNavOpen ? 'h-screen overflow-hidden' : 'h-auto overflow-auto']">
     <Header :isNavOpen="isNavOpen" @toggle="toggleModal" />
-    <main class="relative flex w-full flex-col items-center">
+    <main class="relative flex w-full flex-col items-center overflow-hidden">
       <router-view />
     </main>
     <Footer />
