@@ -7,17 +7,21 @@ import BgPatternAbout2Contact1 from './icons/BgPatternAbout2Contact1.vue';
 </script>
 
 <template>
-  <section class="relative flex w-full flex-col items-center overflow-hidden pb-14 md:pb-16">
+  <section
+    class="flex w-full flex-col items-center overflow-hidden pb-14 md:pb-16 xl:w-[48.64%] xl:pb-0"
+  >
     <div class="absolute top-0 left-0 hidden -translate-x-1/2 md:block">
       <BgPatternAbout2Contact1 />
     </div>
-    <div class="z-10 flex w-[87.2%] flex-col items-center gap-4 md:w-[67.05%] md:gap-6">
+    <div
+      class="z-10 flex w-[87.2%] flex-col items-center gap-4 md:w-[67.05%] md:gap-6 xl:w-full xl:items-start xl:gap-4"
+    >
       <h1
-        class="text-center text-[2.5rem] font-bold leading-[2.5rem] tracking-normal md:text-[4rem] md:leading-[3.5rem]"
+        class="text-center text-[2.5rem] font-bold leading-[2.5rem] tracking-normal md:text-[4rem] md:leading-[3.5rem] xl:leading-[6.25rem]"
       >
         Contact
       </h1>
-      <div class="flex w-full flex-col items-center gap-10 md:gap-6">
+      <div class="flex w-full flex-col items-center gap-10 md:gap-6 xl:items-start xl:gap-8">
         <h2
           class="text-center text-[2rem] font-bold leading-[2rem] tracking-normal text-light-coral md:leading-[3rem]"
         >

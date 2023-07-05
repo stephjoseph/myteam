@@ -15,7 +15,7 @@ import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
 
 <template>
   <section
-    class="relative flex w-full flex-col items-center overflow-hidden bg-deep-jungle-green pt-[5.5rem] pb-[7.25rem] md:pt-[6.25rem] md:pb-32"
+    class="relative flex w-full flex-col items-center overflow-hidden bg-deep-jungle-green pt-[5.5rem] pb-[7.25rem] md:pt-[6.25rem] md:pb-32 xl:pt-[8.75rem] xl:pb-[10.5rem]"
   >
     <div
       class="pointer-events-none absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 md:translate-y-0"
@@ -25,12 +25,16 @@ import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
     <div class="pointer-events-none absolute bottom-0 right-0">
       <BgPatternHome4About3 />
     </div>
-    <div class="z-10 flex w-[87.2%] flex-col items-center gap-12 md:w-[74.60%]">
-      <h2 class="w-full text-center text-[2rem] font-bold leading-8 tracking-normal text-white">
+    <div
+      class="z-10 flex w-[87.2%] flex-col items-center gap-12 md:w-[74.60%] xl:w-[77.08%] xl:gap-16"
+    >
+      <h2
+        class="w-full text-center text-[2rem] font-bold leading-8 tracking-normal text-white xl:text-[3rem] xl:leading-[3rem]"
+      >
         Meet the directors
       </h2>
       <div
-        class="grid w-full grid-cols-1 justify-center gap-[3.25rem] md:grid-cols-2 md:gap-x-[0.688rem] md:gap-y-[4.75rem]"
+        class="grid w-full grid-cols-1 justify-center gap-[3.25rem] md:grid-cols-2 md:gap-x-[0.688rem] md:gap-y-[4.75rem] xl:grid-cols-3 xl:gap-x-[1.875rem]"
       >
         <div
           class="relative w-full bg-sacramento-state-green px-6 pt-8 pb-14"
@@ -46,7 +50,11 @@ import BgPatternHome4About3 from './icons/BgPatternHome4About3.vue';
             </div>
             <div class="flex flex-col items-center">
               <h3 class="font-h3 text-rapture-blue">{{ director.name }}</h3>
-              <div class="font-body-3">{{ director.position }}</div>
+              <div
+                class="font-['Livvic'] text-[0.813rem] font-medium italic leading-[1.125rem] tracking-normal xl:text-[0.938rem] xl:leading-[1.563rem]"
+              >
+                {{ director.position }}
+              </div>
             </div>
           </div>
           <!-- Inner Content -->

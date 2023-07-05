@@ -10,7 +10,7 @@ import AvatarArthur from '../assets/images/avatar-arthur.jpg';
 
 <template>
   <section
-    class="relative flex w-full flex-col items-center bg-deep-jungle-green pt-[8.75rem] pb-[10.25rem] md:py-[6.25rem]"
+    class="relative flex w-full flex-col items-center bg-deep-jungle-green pt-[8.75rem] pb-[10.25rem] md:py-[6.25rem] xl:py-[8.75rem]"
   >
     <div class="pointer-events-none absolute top-0 left-0">
       <BgPatternHome4About3 />
@@ -18,12 +18,16 @@ import AvatarArthur from '../assets/images/avatar-arthur.jpg';
     <div class="pointer-events-none absolute bottom-0 right-0">
       <BgPatternHome5 />
     </div>
-    <div class="z-10 flex w-[87.2%] flex-col items-center gap-[5.25rem] md:w-[74.60%]">
-      <h2 class="text-center text-[2rem] font-bold leading-8 tracking-normal">
+    <div
+      class="z-10 flex w-[87.2%] flex-col items-center gap-[5.25rem] md:w-[74.60%] xl:w-[77.08%] xl:gap-[5.75rem]"
+    >
+      <h2
+        class="text-center text-[2rem] font-bold leading-8 tracking-normal xl:w-[83.96%] xl:text-[3rem] xl:leading-[3rem]"
+      >
         Delivering real results for top companies. Some of our
         <span class="text-rapture-blue">success stories.</span>
       </h2>
-      <div class="flex w-full flex-col items-center gap-[5.25rem]">
+      <div class="flex w-full flex-col items-center gap-[5.25rem] xl:flex-row xl:gap-[1.875rem]">
         <div
           class="relative flex flex-col items-center gap-4 text-center"
           v-for="testimonial in testimonials"
