@@ -92,7 +92,7 @@ import BgPatternContact2 from './icons/BgPatternContact2.vue';
             Please enter a valid message.
           </p>
         </div>
-        <button class="btn-secondary-light" type="submit">submit</button>
+        <button class="btn-secondary-light mt-2" type="submit">submit</button>
       </form>
     </div>
   </section>
@@ -125,7 +125,10 @@ export default {
           if (input.validity.valueMissing && input.nextElementSibling) {
             input.nextElementSibling.innerText = 'This field is required';
           } else if (input.nextElementSibling) {
-            input.nextElementSibling.innerText = `Tlease enter valid ${input.name}`;
+            input.nextElementSibling.innerText = `Please enter valid ${input.name.replace(
+              /-/g,
+              ' '
+            )}`;
           }
         }
       });
@@ -144,15 +147,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.invalid {
-  .help {
-    @apply block;
+form {
+  .invalid {
+    .help {
+      @apply block;
+    }
+
+    input,
+    textarea,
+    .help {
+      @apply border-light-coral placeholder:text-light-coral/60;
+    }
   }
 
-  input,
-  textarea,
-  .help {
-    @apply border-light-coral placeholder:text-light-coral/60;
+  .valid {
+    input,
+    textarea {
+      @apply border-rapture-blue;
+    }
   }
 }
 </style>
